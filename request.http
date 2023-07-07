@@ -1,0 +1,11 @@
+
+GET http://localhost:8081/idat?name=Jhon
+
+###
+
+
+GET http://localhost:8081/idat/codigo?codigo=a18103739
+
+###
+
+GET http://localhost:8081/idat/nombreCom?nomcom=Alvarado
