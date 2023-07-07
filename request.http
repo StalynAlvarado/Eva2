@@ -1,11 +1,29 @@
-
-GET http://localhost:8081/idat?name=Jhon
-
-###
-
-
-GET http://localhost:8081/idat/codigo?codigo=a18103739
+@subdominio = idatcito
+GET http://{{subdominio}}.idat
 
 ###
 
-GET http://localhost:8081/idat/nombreCom?nomcom=Alvarado
+
+GET http://{{subdominio}}.idat/codigo
+
+###
+
+GET http://{{subdominio}}.idat/nombreCom
+
+
+###
+# 4: Listar cursos
+GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
+
+###
+# 5: Nuevo Curso
+POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+nombre=DSW1
+&creditos=2
+
+###
+# 6: Eliminar Curso
+DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
